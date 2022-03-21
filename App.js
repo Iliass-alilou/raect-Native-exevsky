@@ -11,7 +11,7 @@ const navigator = createStackNavigator(
     ListFriend : ListScreen
   },
   {
-    initialRouteName: "ListFriend",
+    initialRouteName: "Home",
     defaultNavigationOptions: {
       title: "App",
     },
