@@ -10,13 +10,29 @@ const HomeScreen = (props) => {
        title='Go to Components Screen'
        onPress={()=>props.navigation.navigate('Components')}
       />
-      <TouchableOpacity onPress={()=>props.navigation.navigate('ListFriend')}>
+      {/* <TouchableOpacity onPress={()=>props.navigation.navigate('ListFriend')}>
         <Text>Go to List Demo</Text>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
       <Button
-       style={styles.buttonStyle}
-       title='Go to Image Screen'
-       onPress={()=>props.navigation.navigate('ImgScreen')}
+        style={styles.buttonStyle}
+        title='Go to List Demo screen'
+        onPress={()=>props.navigation.navigate('ListFriend')}
+      />
+      <Button
+        style={styles.buttonStyle}
+        title='Go to Image Screen'
+        onPress={()=>props.navigation.navigate('ImgScreen')}
+      />
+       <Button
+        style={styles.buttonStyle}
+        title='Go to Counter Screen'
+        onPress={()=>props.navigation.navigate('CalculateScreen')}
+      />
+
+      <Button
+        style={styles.buttonStyle}
+        title='Go to Colors Screen'
+        onPress={()=>props.navigation.navigate('ClsScreen')}
       />
     </View>
   );
@@ -27,7 +43,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
   },
   buttonStyle:{
-    
+    padding: 20
   }
 });
 
