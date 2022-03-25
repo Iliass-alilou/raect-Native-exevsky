@@ -3,7 +3,7 @@ import { Text, StyleSheet, View , Button, TouchableOpacity  } from 'react-native
 
 const HomeScreen = (props) => {
   return ( 
-    <View>
+    <View style = {styles.container}>
       <Text style={styles.text}>Hi there</Text>
       <Button
        style={styles.buttonStyle}
@@ -34,11 +34,25 @@ const HomeScreen = (props) => {
         title='Go to Colors Screen'
         onPress={()=>props.navigation.navigate('ClsScreen')}
       />
+       <Button
+        style={styles.buttonStyle}
+        title='Go to Square Color Screen '
+        onPress={()=>props.navigation.navigate('sarScreenColor')}
+      />
+
+      <Button
+        style={styles.buttonStyle}
+        title='Go to Square Color Screen Reducer '
+        onPress={()=>props.navigation.navigate('SqrScreenReducer')}
+      />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
+  container:{
+    padding:20
+  },
   text: {
     fontSize: 30,
   },
